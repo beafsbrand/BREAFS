@@ -215,5 +215,71 @@ section h2 {
   .hero-content h1 {
     letter-spacing: 0.2em;
   }
+/* =========================
+   FADE ANIMATIONS
+   ========================= */
+
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
 }
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   MOBILE MENU
+   ========================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #0b0b0b;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 1rem 0;
+  }
+/* =========================
+   DROP SECTION
+   ========================= */
+
+.drop {
+  text-align: center;
+}
+
+.drop p {
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.drop span {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  opacity: 0.5;
+}
+
 
