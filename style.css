@@ -281,5 +281,9 @@ section h2 {
   letter-spacing: 0.2em;
   opacity: 0.5;
 }
+.logo img {
+  height: 28px;
+  width: auto;
+}
 
 
