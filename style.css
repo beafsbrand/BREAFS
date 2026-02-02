@@ -285,5 +285,11 @@ section h2 {
   height: 28px;
   width: auto;
 }
+.hero-tagline {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+}
 
 
