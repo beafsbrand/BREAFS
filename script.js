@@ -1,14 +1,9 @@
-// BREAFS - Main Script
-// Minimal, clean, no bullshit
-
 // BREAFS — Main Script
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("BREAFS website loaded");
 
   // Smooth scroll
-  const links = document.querySelectorAll('a[href^="#"]');
-  links.forEach(link => {
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", e => {
       const target = document.querySelector(link.getAttribute("href"));
       if (target) {
@@ -19,18 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Fade-in on scroll
+  // Fade in on scroll
   const faders = document.querySelectorAll(".fade");
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 });
 
   faders.forEach(el => observer.observe(el));
 
@@ -42,5 +34,3 @@ document.addEventListener("DOMContentLoaded", () => {
     nav.classList.toggle("open");
   });
 });
-
-
