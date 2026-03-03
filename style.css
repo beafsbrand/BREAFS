@@ -1,7 +1,3 @@
-/* =========================
-   BREAFS — BASE
-   ========================= */
-
 * {
   margin: 0;
   padding: 0;
@@ -24,18 +20,16 @@ a {
   color: inherit;
 }
 
-/* =========================
-   NAVBAR
-   ========================= */
+/* NAVBAR */
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(8px);
-  z-index: 100;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 100;
 }
 
 .nav-container {
@@ -48,7 +42,7 @@ a {
 }
 
 .logo img {
-  height: 26px;
+  height: 24px;
 }
 
 .nav-links a {
@@ -68,9 +62,7 @@ a {
   cursor: pointer;
 }
 
-/* =========================
-   HERO
-   ========================= */
+/* HERO */
 
 .hero {
   height: 100vh;
@@ -108,9 +100,7 @@ a {
   color: #ffffff;
 }
 
-/* =========================
-   SECTIONS
-   ========================= */
+/* SECTIONS */
 
 section {
   padding: 8rem 2rem;
@@ -126,9 +116,7 @@ section h2 {
   text-transform: uppercase;
 }
 
-/* =========================
-   DROP
-   ========================= */
+/* DROP */
 
 .drop {
   text-align: center;
@@ -145,18 +133,14 @@ section h2 {
   opacity: 0.5;
 }
 
-/* =========================
-   ABOUT
-   ========================= */
+/* ABOUT */
 
 .about p {
   max-width: 700px;
   opacity: 0.8;
 }
 
-/* =========================
-   CONTACT
-   ========================= */
+/* CONTACT */
 
 .contact {
   text-align: center;
@@ -174,9 +158,7 @@ section h2 {
   padding-bottom: 0.3rem;
 }
 
-/* =========================
-   FOOTER
-   ========================= */
+/* FOOTER */
 
 .footer {
   text-align: center;
@@ -185,9 +167,7 @@ section h2 {
   opacity: 0.4;
 }
 
-/* =========================
-   FADE ANIMATION
-   ========================= */
+/* FADE ANIMATION */
 
 .fade {
   opacity: 0;
@@ -200,26 +180,24 @@ section h2 {
   transform: translateY(0);
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
 
-.nav-links {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: #ffffff;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  padding: 2rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
 
   .nav-links.open {
     display: flex;
